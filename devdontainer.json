@@ -1,0 +1,16 @@
+{
+    "name": "Jupyter Notebook Dev Container",
+    "dockerFile": "Dockerfile",
+    "context": ".",
+    "appPort": [8888],
+    "postCreateCommand": "pip install -r requirements.txt",
+    "remoteUser": "root",
+    "workspaceFolder": "/saba",
+    "extensions": [
+        "ms-python.python",
+        "ms-toolsai.jupyter"
+    ],
+    "settings": {
+        "python.pythonPath": "/usr/local/bin/python"
+    }
+}
